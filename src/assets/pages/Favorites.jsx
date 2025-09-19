@@ -13,12 +13,12 @@ function Favorites() {
                     {favorites.map((movie) => (<MovieCard movie={movie} key={movie.id} />))}
                 </div>
             </div>);
+    } else {
+        return <div className="favorites-empty">
+            <h2>No favorites movies yet.</h2>
+            <p>Start adding your favorites movies and they will appear here.</p>
+        </div>
     }
-
-    return <div className="favorites-empty">
-        <h2>No favorites movies yet.</h2>
-        <p>Start adding your favorites movies and they will appear here.</p>
-    </div>
 }
 
 export default Favorites;
