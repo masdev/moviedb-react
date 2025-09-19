@@ -14,9 +14,8 @@ function App() {
 
       <main className="main-content">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/moviedb-react" element={<Home />} />
+          <Route path="/moviedb-react/favorites" element={<Favorites />} />
         </Routes>
       </main>
     </MovieProvider>
